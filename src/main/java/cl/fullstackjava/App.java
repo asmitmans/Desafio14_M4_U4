@@ -14,7 +14,6 @@ public class App
             mostrarMenu();
             command = (int) leerNum("Ingresar opcion: ", scanner);
             if(command > 0 && command < 5) {
-                System.out.println(command);
                 calcular(calc,scanner,command);
             } else if (command!=5) {
                 System.out.println("opcion invalida");
@@ -50,7 +49,7 @@ public class App
             if (num2!=0) {
                 System.out.println(num1 + " / " + num2 +" = " + calc.dividir());
             } else {
-                System.out.println("Error dividion por 0");
+                System.out.println("Error division por 0");
             }
         }
     }
